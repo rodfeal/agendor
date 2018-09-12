@@ -1,0 +1,143 @@
+{
+  "name": {
+    "pt_BR": "Negócio criado",
+    "en": "Deal created"
+  },
+  "description": {
+    "pt_BR": "Negócio criado",
+    "en": "Deal created"
+  },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {
+        "key": "id",
+        "name": "ID",
+        "description": "ID",
+        "field_type": "integer"
+      },
+      {
+        "key": "dealStatus.name",
+        "name": "Status",
+        "description": "Status",
+        "field_type": "string"
+      },
+      {
+        "key": "dealStage.name",
+        "name": "Etapa",
+        "description": "Etapa",
+        "field_type": "string"
+      },
+      {
+        "key": "ranking",
+        "name": "Ranking",
+        "description": "Ranking",
+        "field_type": "integer"
+      },
+      {
+        "key": "createdAt",
+        "name": "Data/hora de cadastro",
+        "description": "Data/hora de cadastro",
+        "field_type": "datetime"
+      },
+      {
+        "key": "title",
+        "name": "Título",
+        "description": "Título",
+        "field_type": "string"
+      },
+      {
+        "key": "author.name",
+        "name": "Responsável",
+        "description": "Responsável",
+        "field_type": "string"
+      },
+      {
+        "key": "value",
+        "name": "Valor total",
+        "description": "Valor total",
+        "field_type": "string"
+      },
+      {
+        "key": "startTime",
+        "name": "Data de início",
+        "description": "Data de início",
+        "field_type": "datetime"
+      },
+      {
+        "key": "endTime",
+        "name": "Data de conclusão",
+        "description": "Data de conclusão",
+        "field_type": "datetime"
+      },
+      {
+        "key": "description",
+        "name": "Descrição",
+        "description": "Descrição",
+        "field_type": "string"
+      },
+      {
+        "key": "products",
+        "name": "Produtos e serviços relacionados",
+        "description": "Produtos e serviços relacionados",
+        "field_type": "string"
+      },
+      {
+        "key": "person.id",
+        "name": "Pessoa: id",
+        "description": "Pessoa: id",
+        "field_type": "integer"
+      },
+      {
+        "key": "person.name",
+        "name": "Pessoa: nome",
+        "description": "Pessoa: nome",
+        "field_type": "string"
+      },
+      {
+        "key": "person.email",
+        "name": "Pessoa: email",
+        "description": "Pessoa: email",
+        "field_type": "string"
+      },
+      {
+        "key": "person.cpf",
+        "name": "Pessoa: cpf",
+        "description": "Pessoa: cpf",
+        "field_type": "string"
+      },
+      {
+        "key": "person.role",
+        "name": "Pessoa: cargo",
+        "description": "Pessoa: cargo",
+        "field_type": "string"
+      },
+      {
+        "key": "person.ranking",
+        "name": "Pessoa: ranking",
+        "description": "Pessoa: ranking",
+        "field_type": "integer"
+      },
+      {
+        "key": "person.description",
+        "name": "Pessoa: descrição",
+        "description": "Pessoa: descrição",
+        "field_type": "string"
+      },
+      {
+        "key": "person.birthday",
+        "name": "Pessoa: data de aniversário",
+        "description": "Pessoa: data de aniversário",
+        "field_type": "string"
+      }
+    ]
+  },
+  "idempotent": [
+    {"type": "body", "field": "id"}
+  ],
+  "base_created_at_filter": {
+    "field": "createdAt",
+    "format": "%Y-%m-%dT%H:%M:%S.000Z",
+    "zone": "UTC"
+  }
+}
