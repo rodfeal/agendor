@@ -1,17 +1,497 @@
 {
   "name": {
-    "pt_BR": "",
-    "en": ""
+    "pt_BR": "Negócio perdido",
+    "en": "Deal lost"
   },
   "description": {
-    "pt_BR": "",
-    "en": ""
+    "pt_BR": "Negócio perdido",
+    "en": "Deal lost"
   },
   "trigger_fields": {
     "type": "local",
-    "fields": []
+    "fields": [
+      {
+        "key": "id",
+        "name": "ID",
+        "description": "ID",
+        "field_type": "integer"
+      },
+      {
+        "key": "dealStatus.name",
+        "name": "Status",
+        "description": "Status",
+        "field_type": "string"
+      },
+      {
+        "key": "lossReason.name",
+        "name": "Motivo da perda",
+        "description": "Motivo da perda",
+        "field_type": "string"
+      },
+      {
+        "key": "lossReason.description",
+        "name": "Descrição da perda",
+        "description": "Descrição da perda",
+        "field_type": "string"
+      },
+      {
+        "key": "dealStage.name",
+        "name": "Etapa",
+        "description": "Etapa",
+        "field_type": "string"
+      },
+      {
+        "key": "ranking",
+        "name": "Ranking",
+        "description": "Ranking",
+        "field_type": "integer"
+      },
+      {
+        "key": "createdAt",
+        "name": "Data/hora de cadastro",
+        "description": "Data/hora de cadastro",
+        "field_type": "datetime"
+      },
+      {
+        "key": "title",
+        "name": "Título",
+        "description": "Título",
+        "field_type": "string"
+      },
+      {
+        "key": "author.name",
+        "name": "Responsável",
+        "description": "Responsável",
+        "field_type": "string"
+      },
+      {
+        "key": "value",
+        "name": "Valor total",
+        "description": "Valor total",
+        "field_type": "string"
+      },
+      {
+        "key": "startTime",
+        "name": "Data de início",
+        "description": "Data de início",
+        "field_type": "datetime"
+      },
+      {
+        "key": "endTime",
+        "name": "Data de conclusão/perda",
+        "description": "Data de conclusão/perda",
+        "field_type": "datetime"
+      },
+      {
+        "key": "description",
+        "name": "Descrição",
+        "description": "Descrição",
+        "field_type": "string"
+      },
+      {
+        "key": "product_service_names",
+        "name": "Produtos e serviços relacionados",
+        "description": "Produtos e serviços relacionados",
+        "field_type": "string"
+      },
+      {
+        "key": "person.id",
+        "name": "Pessoa: id",
+        "description": "Pessoa: id",
+        "field_type": "integer"
+      },
+      {
+        "key": "person.name",
+        "name": "Pessoa: nome",
+        "description": "Pessoa: nome",
+        "field_type": "string"
+      },
+      {
+        "key": "person.email",
+        "name": "Pessoa: email",
+        "description": "Pessoa: email",
+        "field_type": "string"
+      },
+      {
+        "key": "person.cpf",
+        "name": "Pessoa: cpf",
+        "description": "Pessoa: cpf",
+        "field_type": "string"
+      },
+      {
+        "key": "person.role",
+        "name": "Pessoa: cargo",
+        "description": "Pessoa: cargo",
+        "field_type": "string"
+      },
+      {
+        "key": "person.ranking",
+        "name": "Pessoa: ranking",
+        "description": "Pessoa: ranking",
+        "field_type": "integer"
+      },
+      {
+        "key": "person.description",
+        "name": "Pessoa: descrição",
+        "description": "Pessoa: descrição",
+        "field_type": "string"
+      },
+      {
+        "key": "person.birthday",
+        "name": "Pessoa: data de aniversário",
+        "description": "Pessoa: data de aniversário",
+        "field_type": "string"
+      },
+      {
+        "key": "person.category.name",
+        "name": "Pessoa: categoria",
+        "description": "Pessoa: categoria",
+        "field_type": "string"
+      },
+      {
+        "key": "person.leadOrigin.name",
+        "name": "Pessoa: origem",
+        "description": "Pessoa: origem",
+        "field_type": "string"
+      },
+      {
+        "key": "person.author.name",
+        "name": "Pessoa: responsável",
+        "description": "Pessoa: responsável",
+        "field_type": "string"
+      },
+      {
+        "key": "person.organization.name",
+        "name": "Pessoa: de qual empresa?",
+        "description": "Pessoa: de qual empresa?",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.work",
+        "name": "Pessoa: telefone",
+        "description": "Pessoa: telefone",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.mobile",
+        "name": "Pessoa: celular",
+        "description": "Pessoa: celular",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.fax",
+        "name": "Pessoa: fax",
+        "description": "Pessoa: fax",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.ramal",
+        "name": "Pessoa: ramal",
+        "description": "Pessoa: ramal",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.radio",
+        "name": "Pessoa: radio",
+        "description": "Pessoa: radio",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.whatsapp",
+        "name": "Pessoa: whatsapp",
+        "description": "Pessoa: whatsapp",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.facebook",
+        "name": "Pessoa: facebook",
+        "description": "Pessoa: facebook",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.twitter",
+        "name": "Pessoa: twitter",
+        "description": "Pessoa: twitter",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.linkedIn",
+        "name": "Pessoa: linkedin",
+        "description": "Pessoa: linkedin",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.skype",
+        "name": "Pessoa: skype",
+        "description": "Pessoa: skype",
+        "field_type": "string"
+      },
+      {
+        "key": "person.contact.instagram",
+        "name": "Pessoa: instagram",
+        "description": "Pessoa: instagram",
+        "field_type": "string"
+      },
+      {
+        "key": "person.product_service_names",
+        "name": "Pessoa: produtos e serviços relacionados",
+        "description": "Pessoa: produtos e serviços relacionados",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.country",
+        "name": "Pessoa: país",
+        "description": "Pessoa: país",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.district",
+        "name": "Pessoa: bairro",
+        "description": "Pessoa: bairro",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.streetName",
+        "name": "Pessoa: rua",
+        "description": "Pessoa: rua",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.streetNumber",
+        "name": "Pessoa: nº da rua",
+        "description": "Pessoa: nº da rua",
+        "field_type": "integer"
+      },
+      {
+        "key": "person.address.additionalInfo",
+        "name": "Pessoa: complemento",
+        "description": "Pessoa: complemento",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.postalCode",
+        "name": "Pessoa: cep",
+        "description": "Pessoa: cep",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.state",
+        "name": "Pessoa: estado",
+        "description": "Pessoa: estado",
+        "field_type": "string"
+      },
+      {
+        "key": "person.address.city",
+        "name": "Pessoa: cidade",
+        "description": "Pessoa: cidade",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.id",
+        "name": "Empresa: id",
+        "description": "Empresa: id",
+        "field_type": "integer"
+      },
+      {
+        "key": "organization.name",
+        "name": "Empresa: nome",
+        "description": "Empresa: nome",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.legalName",
+        "name": "Empresa: razão social",
+        "description": "Empresa: razão social",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.email",
+        "name": "Empresa: email",
+        "description": "Empresa: email",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.cnpj",
+        "name": "Empresa: cnpj",
+        "description": "Empresa: cnpj",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.website",
+        "name": "Empresa: website",
+        "description": "Empresa: website",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.ranking",
+        "name": "Empresa: ranking",
+        "description": "Empresa: ranking",
+        "field_type": "integer"
+      },
+      {
+        "key": "organization.description",
+        "name": "Empresa: descrição",
+        "description": "Empresa: descrição",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.category.name",
+        "name": "Empresa: categoria",
+        "description": "Empresa: categoria",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.leadOrigin.name",
+        "name": "Empresa: origem",
+        "description": "Empresa: origem",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.author.name",
+        "name": "Empresa: responsável",
+        "description": "Empresa: responsável",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.sector.name",
+        "name": "Empresa: setor",
+        "description": "Empresa: setor",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.work",
+        "name": "Empresa: telefone",
+        "description": "Empresa: telefone",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.mobile",
+        "name": "Empresa: celular",
+        "description": "Empresa: celular",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.fax",
+        "name": "Empresa: fax",
+        "description": "Empresa: fax",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.ramal",
+        "name": "Empresa: ramal",
+        "description": "Empresa: ramal",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.radio",
+        "name": "Empresa: radio",
+        "description": "Empresa: radio",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.whatsapp",
+        "name": "Empresa: whatsapp",
+        "description": "Empresa: whatsapp",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.facebook",
+        "name": "Empresa: facebook",
+        "description": "Empresa: facebook",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.twitter",
+        "name": "Empresa: twitter",
+        "description": "Empresa: twitter",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.linkedIn",
+        "name": "Empresa: linkedin",
+        "description": "Empresa: linkedin",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.skype",
+        "name": "Empresa: skype",
+        "description": "Empresa: skype",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.contact.instagram",
+        "name": "Empresa: instagram",
+        "description": "Empresa: instagram",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.product_service_names",
+        "name": "Empresa: produtos e serviços relacionados",
+        "description": "Empresa: produtos e serviços relacionados",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.country",
+        "name": "Empresa: país",
+        "description": "Empresa: país",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.district",
+        "name": "Empresa: bairro",
+        "description": "Empresa: bairro",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.streetName",
+        "name": "Empresa: rua",
+        "description": "Empresa: rua",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.streetNumber",
+        "name": "Empresa: nº da rua",
+        "description": "Empresa: nº da rua",
+        "field_type": "integer"
+      },
+      {
+        "key": "organization.address.additionalInfo",
+        "name": "Empresa: complemento",
+        "description": "Empresa: complemento",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.postalCode",
+        "name": "Empresa: cep",
+        "description": "Empresa: cep",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.state",
+        "name": "Empresa: estado",
+        "description": "Empresa: estado",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.address.city",
+        "name": "Empresa: cidade",
+        "description": "Empresa: cidade",
+        "field_type": "string"
+      },
+      {
+        "key": "organization.person_names_emails",
+        "name": "Empresa: pessoas dessa empresa",
+        "description": "Empresa: pessoas dessa empresa",
+        "field_type": "string"
+      }
+    ]
   },
-  "configuration_fields": [],
-  "trigger_type": "polling",
-  "idempotent": ["id"]
+  "idempotent": [
+    {"type": "body", "field": "id"}
+  ],
+  "base_created_at_filter": {
+    "field": "createdAt",
+    "format": "%Y-%m-%dT%H:%M:%S.000Z",
+    "zone": "UTC"
+  }
 }
