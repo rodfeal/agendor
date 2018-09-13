@@ -68,7 +68,7 @@
         "key": "value",
         "name": "Valor total",
         "description": "Valor total",
-        "field_type": "string"
+        "field_type": "decimal"
       },
       {
         "key": "startTime",

@@ -1,10 +1,10 @@
 {
   "name": {
-    "pt_BR": "Negócio ganho",
+    "pt_BR": "Negócio ganho/concluído",
     "en": "Deal won"
   },
   "description": {
-    "pt_BR": "Negócio ganho",
+    "pt_BR": "Negócio ganho/concluído",
     "en": "Deal won"
   },
   "trigger_fields": {
@@ -56,7 +56,7 @@
         "key": "value",
         "name": "Valor total",
         "description": "Valor total",
-        "field_type": "string"
+        "field_type": "decimal"
       },
       {
         "key": "startTime",
