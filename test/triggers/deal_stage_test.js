@@ -12,7 +12,7 @@ describe('Trigger: deal stage', () => {
         token: process.env.TOKEN
       },
       input: {
-        dealStage: 1446424
+        stage_id: 1446424
       }
     };
 

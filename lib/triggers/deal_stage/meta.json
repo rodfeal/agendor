@@ -474,6 +474,32 @@
       }
     ]
   },
+  "configuration_fields": [
+    {
+      "key": "stage_id",
+      "name": {"pt_BR": "etapa do funil", "en": "agendor stage"},
+      "description": {
+        "pt_BR": "A etapa do funil é o gatilho para a automatização acontecer, isto é, quando um deal chegar na etapa do funil que você selecionar, os dados dele serão enviados para a ferramenta que você deseja integrar.",
+        "en": "The agendor stage is the trigger for automation to happen, that is, when a deal arrives at the agendor stage you select, the data from it will be sent to the tool you want to integrate."
+      },
+      "label": {
+        "pt_BR": "Selecione a etapa do funil",
+        "en": "Select agendor stage"
+      },
+      "placeholder": {
+        "pt_BR": "Selecionar etapa do funil",
+        "en": "Select agendor stage"
+      },
+      "required": true,
+      "visible": true,
+      "field_type": "dropdown",
+      "data_type": "integer",
+      "list": {
+        "type": "remote",
+        "helper_method": "stage"
+      }
+    }
+  ],
   "idempotent": [
     {"type": "body", "field": "id"}
   ],
