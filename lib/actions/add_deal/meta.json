@@ -1,0 +1,188 @@
+{
+  "name": {
+    "pt_BR": "Adicionar negócio",
+    "en": "Add deal"
+  },
+  "description": {
+    "pt_BR": "Adicionar uma tag à sua escolha a um contato",
+    "en": "Attach a tag of your choosing to an existing subscriber"
+  },
+  "action_fields": {
+    "fields": [
+      {
+        "key": "dealStatus",
+        "name": {
+          "pt_BR": "Situação do negócio",
+          "en": "Deal"
+        },
+        "description": {
+          "pt_BR": "Criar negócio",
+          "en": "Create deal"
+        },
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "description",
+        "name": {
+          "pt_BR": "Descrição",
+          "en": "Description"
+        },
+        "field_type": "string",
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "endTime",
+        "name": {
+          "pt_BR": "Data de Conclusão",
+          "en": "End Time"
+        },
+        "description": {
+          "pt_BR": "Escolha um contato E-goi (ID único)",
+          "en": "Choose an E-goi subscriber (reference number)"
+        },
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%d/%m/%Y",
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "ranking",
+        "name": {
+          "pt_BR": "Ranking",
+          "en": "Ranking"
+        },
+        "description": {
+          "pt_BR": "Escolha o ranking de um Deal",
+          "en": "Choose a Deal ranking"
+        },
+        "field_type": "custom",
+        "data_type": "integer",
+        "max": 1,
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "startTime",
+        "name": {
+          "pt_BR": "Data de Início",
+          "en": "Start Time"
+        },
+        "description": {
+          "pt_BR": "Escolha um contato E-goi (ID único)",
+          "en": "Choose an E-goi subscriber (reference number)"
+        },
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%d/%m/%Y",
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "ownerUser",
+        "name": {
+          "pt_BR": "Responsável",
+          "en": "Owner"
+        },
+        "description": {
+          "pt_BR": "Usuário responsável",
+          "en": "User owner"
+        },
+        "list": {
+          "type": "remote",
+          "helper_method": "owners"
+        },
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "dealStage",
+        "name":{
+          "pt_BR": "Estágio do Negócio",
+          "en": "Deal Stage"
+        },
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "value",
+        "name":{
+          "pt_BR":"Valor",
+          "en": "Value"
+        },
+        "field_type": "custom",
+        "data_type": "decimal",
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "title",
+        "name":{
+          "pt_BR":"Título",
+          "en": "Title"
+        },
+        "field_type": "custom",
+        "data_type": "string",
+        "required": true,
+        "visible": true
+      },
+      {
+        "key": "author",
+        "name":{
+          "pt_BR":"Autor",
+          "en": "Author"
+        },
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "startTime",
+        "name": {
+          "pt_BR": "Data de Início",
+          "en": "Start Time"
+        },
+        "description": {
+          "pt_BR": "Escolha um contato E-goi (ID único)",
+          "en": "Choose an E-goi subscriber (reference number)"
+        },
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%d/%m/%Y",
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "createTime",
+        "name": {
+          "pt_BR": "Data de criação",
+          "en": "Create time"
+        },
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%d/%m/%Y",
+        "required": false,
+        "visible": true
+      },
+      {
+        "key": "deal.type",
+        "name":{
+          "pt_BR":"Tipo de Negócio",
+          "en": "Deal type"
+        },
+        "field_type": "dropdown",
+        "data_type": "string",
+        "list": {
+          "type": "local",
+          "data": [
+            {"label": "Organização", "value": "organzation"},
+            {"label": "Pessoa", "value": "people"}
+          ]
+        },
+        "required": true,
+        "visible": true
+      }
+    ]
+  }
+}
