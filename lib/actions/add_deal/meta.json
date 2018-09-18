@@ -4,8 +4,8 @@
     "en": "Add deal"
   },
   "description": {
-    "pt_BR": "Adicionar uma tag à sua escolha a um contato",
-    "en": "Attach a tag of your choosing to an existing subscriber"
+    "pt_BR": "Adicionar um novo negócio",
+    "en": "Add a new deal"
   },
   "action_fields": {
     "fields": [
@@ -13,7 +13,7 @@
         "key": "dealStatus",
         "name": {
           "pt_BR": "Situação do negócio",
-          "en": "Deal"
+          "en": "Deal situation"
         },
         "description": {
           "pt_BR": "Criar negócio",
@@ -37,10 +37,6 @@
         "name": {
           "pt_BR": "Data de Conclusão",
           "en": "End Time"
-        },
-        "description": {
-          "pt_BR": "Escolha um contato E-goi (ID único)",
-          "en": "Choose an E-goi subscriber (reference number)"
         },
         "field_type": "custom",
         "data_type": "datetime",
