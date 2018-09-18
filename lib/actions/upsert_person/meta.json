@@ -1,0 +1,301 @@
+{
+  "name": {
+    "pt_BR": "Adicionar pessoa",
+    "en": "Add person"
+  },
+  "description": {
+    "pt_BR": "Adicionar uma nova pessoa",
+    "en": "Add a new person"
+  },
+  "action_fields": {
+    "fields": [
+      {
+        "key": "name",
+        "name": {
+          "pt_BR": "Nome da pessoa",
+          "en": "Person name"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "role",
+        "name": {
+          "pt_BR": "Cargo",
+          "en": "Role"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "cpf",
+        "name": {
+          "pt_BR": "CPF",
+          "en": "CPF"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "ranking",
+        "name": {
+          "pt_BR": "Classificação",
+          "en": "Ranking"
+        },
+        "field_type": "custom",
+        "data_type": "integer",
+        "max": 1,
+        "visible": true
+      },
+      {
+        "key": "description",
+        "name": {
+          "pt_BR": "Descrição da empresa",
+          "en": "Organization description"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "birthday",
+        "name": {
+          "pt_BR": "Data de aniversário",
+          "en": "Birthday"
+        },
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%d/%m/%Y",
+        "visible": true
+      },
+      {
+        "key": "ownerUser",
+        "name": {
+          "pt_BR": "Responsável",
+          "en": "Owner"
+        },
+        "description": {
+          "pt_BR": "Usuário responsável",
+          "en": "User owner"
+        },
+        "list": {
+          "type": "remote",
+          "helper_method": "owners"
+        },
+        "visible": true
+      },
+      {
+        "key": "organization",
+        "name": {
+          "pt_BR": "Empresa",
+          "en": "Organization"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.email",
+        "name": {
+          "pt_BR": "Email",
+          "en": "Email"
+        },
+        "field_type": "string",
+        "require": true,
+        "visible": true
+      },
+      {
+        "key": "contact.work",
+        "name": {
+          "pt_BR": "Ramal",
+          "en": "Work"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.mobile",
+        "name": {
+          "pt_BR": "Celular",
+          "en": "Mobile"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.fax",
+        "name": {
+          "pt_BR": "Fax",
+          "en": "Fax"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.whatsapp",
+        "name": {
+          "pt_BR": "Whatsapp",
+          "en": "Whatsapp"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.facebook",
+        "name": {
+          "pt_BR": "Facebook",
+          "en": "Facebook"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.twitter",
+        "name": {
+          "pt_BR": "Twitter",
+          "en": "Twitter"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.instagram",
+        "name": {
+          "pt_BR": "Instagram",
+          "en": "Instagram"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.linked_in",
+        "name": {
+          "pt_BR": "LinkedIn",
+          "en": "LinkedIn"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "contact.skype",
+        "name": {
+          "pt_BR": "Skype",
+          "en": "Skype"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.postal_code",
+        "name": {
+          "pt_BR": "CEP",
+          "en": "Postal code"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.country",
+        "name": {
+          "pt_BR": "País",
+          "en": "Country"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.district",
+        "name": {
+          "pt_BR": "Bairro",
+          "en": "District"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.state",
+        "name": {
+          "pt_BR": "Estado",
+          "en": "State"
+        },
+        "field_type": "custom",
+        "data_type": "string",
+        "max": 2,
+        "visible": true
+      },
+      {
+        "key": "address.street_name",
+        "name": {
+          "pt_BR": "Nome da Rua",
+          "en": "Street name"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.street_number",
+        "name": {
+          "pt_BR": "Número",
+          "en": "Number"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.additional_info",
+        "name": {
+          "pt_BR": "Complemento",
+          "en": "Additional information"
+        },
+        "field_type": "string",
+        "visible": true
+      },
+      {
+        "key": "address.city",
+        "name": {
+          "pt_BR": "Cidade",
+          "en": "City"
+        },
+        "visible": true
+      },
+      {
+        "key": "address.city_id",
+        "name": {
+          "pt_BR": "Cidade",
+          "en": "City"
+        },
+        "visible": true
+      },
+      {
+        "key": "leadOrigin",
+        "name": {
+          "pt_BR": "Origem do Lead",
+          "en": "Lead origin"
+        },
+        "visible": true
+      },
+      {
+        "key": "category",
+        "name": {
+          "pt_BR": "Categoria",
+          "en": "Category"
+        },
+        "visible": true
+      },
+      {
+        "key": "sector",
+        "name": {
+          "pt_BR": "Setor",
+          "en": "Sector"
+        },
+        "visible": true
+      },
+      {
+        "key": "author",
+        "name": {
+          "pt_BR": "Autor",
+          "en": "Author"
+        },
+        "visible": true
+      }
+    ]
+  }
+}

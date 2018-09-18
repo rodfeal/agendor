@@ -11,9 +11,12 @@ const event = {
     api_key: process.env.TOKEN
   },
   input:{
-    organization_id: 15022132,
     title: title,
-    type: 'organization'
+    type: 'organization',
+    organization: {
+      name: 'Organization 2',
+      description: 'Organization 1'
+    }
   }
 };
 
