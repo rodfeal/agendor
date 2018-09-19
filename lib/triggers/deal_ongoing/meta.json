@@ -1,11 +1,11 @@
 {
   "name": {
-    "pt_BR": "Negócio em andamento",
-    "en": "Deal ongoing"
+    "pt_BR": "Negócio criado",
+    "en": "Created deal"
   },
   "description": {
-    "pt_BR": "Negócio em andamento",
-    "en": "Deal ongoing"
+    "pt_BR": "Negócio criado",
+    "en": "Created deal"
   },
   "trigger_fields": {
     "type": "local",
