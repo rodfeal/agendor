@@ -8,35 +8,33 @@ const event = {
     baseURI: process.env.BASE_URI
   },
   auth: {
-    api_key: process.env.TOKEN
+    token: process.env.TOKEN
   },
   input:{
     title: title,
-    type: 'organization',
-    organization: {
-      name: 'Organization 2',
-      description: 'Organization 1'
-    }
+    path: 'people',
+    person: 21270854
   }
 };
 
 describe('Action: Add deal', () => {
   it('Should add a deal', function (done) {
+    action.handle(plg, event).then(result => {
+      expect(result).to.include({
+        title: title
+      });
 
-    action.handle(plg, event)
-      .then(res => {
-        expect(res.statusText).to.eq('Created');
-        done();
-      })
-      .catch(done);
+      done();
+    }).catch(done);
   });
 
   it('Should update a deal', function (done) {
-    action.handle(plg, event)
-      .then(res => {
-        expect(res.statusText).to.eq('OK');
-        done();
-      })
-      .catch(done);
+    action.handle(plg, event).then(result => {
+      expect(result).to.include({
+        title: title
+      });
+
+      done();
+    }).catch(done);
   });
 });

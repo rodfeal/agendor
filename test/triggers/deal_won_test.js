@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 const trigger = require('../../lib/triggers/deal_won');
 
 describe('Trigger: deal won', () => {
-  it('test your trigger handle here', (done) => {
+  it('success', (done) => {
     const event = {
       meta: {
         baseURI: process.env.BASE_URI
@@ -17,7 +17,8 @@ describe('Trigger: deal won', () => {
       results.forEach((deal) => {
         expect(deal.dealStatus.id).to.eq(2);
       });
+
       done();
-    }).catch(done);;
+    }).catch(done);
   });
 });
