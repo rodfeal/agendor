@@ -10,465 +10,638 @@
   "action_fields": {
     "fields": [
       {
-        "key": "dealStatus",
-        "name": {
-          "pt_BR": "Situação do negócio",
-          "en": "Deal situation"
-        },
-        "description": {
-          "pt_BR": "Criar negócio",
-          "en": "Create deal"
-        },
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "description",
-        "name": {
-          "pt_BR": "Descrição",
-          "en": "Description"
-        },
-        "field_type": "string",
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "endTime",
-        "name": {
-          "pt_BR": "Data de Conclusão",
-          "en": "End Time"
-        },
-        "field_type": "custom",
-        "data_type": "datetime",
-        "date_format": "%d/%m/%Y",
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "ranking",
-        "name": {
-          "pt_BR": "Ranking",
-          "en": "Ranking"
-        },
-        "description": {
-          "pt_BR": "Escolha o ranking de um Deal",
-          "en": "Choose a Deal ranking"
-        },
-        "field_type": "custom",
-        "data_type": "integer",
-        "max": 1,
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "startTime",
-        "name": {
-          "pt_BR": "Data de Início",
-          "en": "Start Time"
-        },
-        "description": {
-          "pt_BR": "Escolha um contato E-goi (ID único)",
-          "en": "Choose an E-goi subscriber (reference number)"
-        },
-        "field_type": "custom",
-        "data_type": "datetime",
-        "date_format": "%d/%m/%Y",
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "ownerUser",
-        "name": {
-          "pt_BR": "Responsável",
-          "en": "Owner"
-        },
-        "description": {
-          "pt_BR": "Usuário responsável",
-          "en": "User owner"
-        },
-        "list": {
-          "type": "remote",
-          "helper_method": "owners"
-        },
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "dealStage",
-        "name":{
-          "pt_BR": "Estágio do Negócio",
-          "en": "Deal Stage"
-        },
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "value",
-        "name":{
-          "pt_BR":"Valor",
-          "en": "Value"
-        },
-        "field_type": "custom",
-        "data_type": "decimal",
-        "required": false,
-        "visible": true
-      },
-      {
         "key": "title",
-        "name":{
-          "pt_BR":"Título",
-          "en": "Title"
-        },
-        "field_type": "custom",
-        "data_type": "string",
+        "name": { "pt_BR": "Título", "en": "Título" },
+        "description": {"pt_BR": "Título","en": "Título"},
         "required": true,
-        "visible": true
-      },
-      {
-        "key": "author",
-        "name":{
-          "pt_BR":"Autor",
-          "en": "Author"
-        },
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "startTime",
-        "name": {
-          "pt_BR": "Data de Início",
-          "en": "Start Time"
-        },
-        "description": {
-          "pt_BR": "Escolha um contato E-goi (ID único)",
-          "en": "Choose an E-goi subscriber (reference number)"
-        },
+        "visible": true,
         "field_type": "custom",
-        "data_type": "datetime",
-        "date_format": "%d/%m/%Y",
-        "required": false,
-        "visible": true
+        "data_type": "string"
       },
       {
-        "key": "createTime",
-        "name": {
-          "pt_BR": "Data de criação",
-          "en": "Create time"
+        "key" : "organization_person",
+        "label": { "pt_BR": "Empresa/Pessoa", "en": "Empresa/Pessoa" },
+        "description": {"pt_BR": "Empresa/Pessoa","en": "Empresa/Pessoa"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
         },
-        "field_type": "custom",
-        "data_type": "datetime",
-        "date_format": "%d/%m/%Y",
-        "required": false,
-        "visible": true
-      },
-      {
-        "key": "deal.type",
-        "name":{
-          "pt_BR":"Tipo de Negócio",
-          "en": "Deal type"
-        },
+        "required": true,
+        "visible": true,
         "field_type": "dropdown",
         "data_type": "string",
         "list": {
-          "type": "local",
+          "type" : "local",
           "data": [
-            {"label": "Organização", "value": "organzation"},
-            {"label": "Pessoa", "value": "people"}
+            {"label": "organization", "value": "Empresa"},
+            {"label": "person", "value": "Pessoa"}
           ]
-        },
-        "required": true,
-        "visible": true
+        }
       },
       {
-        "entity": [
-          {
-            "key": "name",
-            "name": {
-              "pt_BR": "Nome da pessoa",
-              "en": "Person name"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "role",
-            "name": {
-              "pt_BR": "Cargo",
-              "en": "Role"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "cpf",
-            "name": {
-              "pt_BR": "CPF",
-              "en": "CPF"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "ranking",
-            "name": {
-              "pt_BR": "Classificação",
-              "en": "Ranking"
-            },
-            "field_type": "custom",
-            "data_type": "integer",
-            "max": 1,
-            "visible": true
-          },
-          {
-            "key": "description",
-            "name": {
-              "pt_BR": "Descrição da empresa",
-              "en": "Organization description"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "birthday",
-            "name": {
-              "pt_BR": "Data de aniversário",
-              "en": "Birthday"
-            },
-            "field_type": "custom",
-            "data_type": "datetime",
-            "date_format": "%d/%m/%Y",
-            "visible": true
-          },
-          {
-            "key": "ownerUser",
-            "name": {
-              "pt_BR": "Responsável",
-              "en": "Owner"
-            },
-            "description": {
-              "pt_BR": "Usuário responsável",
-              "en": "User owner"
-            },
-            "list": {
-              "type": "remote",
-              "helper_method": "owners"
-            },
-            "visible": true
-          },
-          {
-            "key": "organization",
-            "name": {
-              "pt_BR": "Empresa",
-              "en": "Organization"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.email",
-            "name": {
-              "pt_BR": "Email",
-              "en": "Email"
-            },
-            "field_type": "string",
-            "require": true,
-            "visible": true
-          },
-          {
-            "key": "contact.work",
-            "name": {
-              "pt_BR": "Ramal",
-              "en": "Work"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.mobile",
-            "name": {
-              "pt_BR": "Celular",
-              "en": "Mobile"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.fax",
-            "name": {
-              "pt_BR": "Fax",
-              "en": "Fax"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.whatsapp",
-            "name": {
-              "pt_BR": "Whatsapp",
-              "en": "Whatsapp"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.facebook",
-            "name": {
-              "pt_BR": "Facebook",
-              "en": "Facebook"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.twitter",
-            "name": {
-              "pt_BR": "Twitter",
-              "en": "Twitter"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.instagram",
-            "name": {
-              "pt_BR": "Instagram",
-              "en": "Instagram"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.linked_in",
-            "name": {
-              "pt_BR": "LinkedIn",
-              "en": "LinkedIn"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "contact.skype",
-            "name": {
-              "pt_BR": "Skype",
-              "en": "Skype"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.postal_code",
-            "name": {
-              "pt_BR": "CEP",
-              "en": "Postal code"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.country",
-            "name": {
-              "pt_BR": "País",
-              "en": "Country"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.district",
-            "name": {
-              "pt_BR": "Bairro",
-              "en": "District"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.state",
-            "name": {
-              "pt_BR": "Estado",
-              "en": "State"
-            },
-            "field_type": "custom",
-            "data_type": "string",
-            "max": 2,
-            "visible": true
-          },
-          {
-            "key": "address.street_name",
-            "name": {
-              "pt_BR": "Nome da Rua",
-              "en": "Street name"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.street_number",
-            "name": {
-              "pt_BR": "Número",
-              "en": "Number"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.additional_info",
-            "name": {
-              "pt_BR": "Complemento",
-              "en": "Additional information"
-            },
-            "field_type": "string",
-            "visible": true
-          },
-          {
-            "key": "address.city",
-            "name": {
-              "pt_BR": "Cidade",
-              "en": "City"
-            },
-            "visible": true
-          },
-          {
-            "key": "address.city_id",
-            "name": {
-              "pt_BR": "Cidade",
-              "en": "City"
-            },
-            "visible": true
-          },
-          {
-            "key": "leadOrigin",
-            "name": {
-              "pt_BR": "Origem do Lead",
-              "en": "Lead origin"
-            },
-            "visible": true
-          },
-          {
-            "key": "category",
-            "name": {
-              "pt_BR": "Categoria",
-              "en": "Category"
-            },
-            "visible": true
-          },
-          {
-            "key": "sector",
-            "name": {
-              "pt_BR": "Setor",
-              "en": "Sector"
-            },
-            "visible": true
-          },
-          {
-            "key": "author",
-            "name": {
-              "pt_BR": "Autor",
-              "en": "Author"
-            },
-            "visible": true
-          }
-        ]
+        "key": "dealStatus",
+        "label": { "pt_BR": "Status", "en": "Status" },
+        "description": {"pt_BR": "Status","en": "Status"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "status"
+        }
+      },
+      {
+        "key": "description",
+        "name": { "pt_BR": "Descrição", "en": "Descrição" },
+        "description": {"pt_BR": "Descrição","en": "Descrição"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "startTime",
+        "name": { "pt_BR": "Data de início", "en": "Data de início" },
+        "description": {"pt_BR": "Data de início","en": "Data de início"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%Y-%m-%Y"
+      },
+      {
+        "key": "endTime",
+        "name": { "pt_BR": "Data de conclusão", "en": "Data de conclusão" },
+        "description": {"pt_BR": "Data de conclusão","en": "Data de conclusão"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%Y-%m-%Y"
+      },
+      {
+        "key": "ranking",
+        "name": { "pt_BR": "Ranking", "en": "Ranking" },
+        "description": {"pt_BR": "Ranking","en": "Ranking"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "integer"
+      },
+      {
+        "key": "ownerUser",
+        "label": { "pt_BR": "Responsável", "en": "Responsável" },
+        "description": {"pt_BR": "Responsável","en": "Responsável"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "user"
+        }
+      },
+      {
+        "key": "dealStage",
+        "label": { "pt_BR": "Etapa", "en": "Etapa" },
+        "description": {"pt_BR": "Etapa","en": "Etapa"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "stage"
+        }
+      },
+      {
+        "key": "value",
+        "name": { "pt_BR": "Valor total", "en": "Valor total" },
+        "description": {"pt_BR": "Valor total","en": "Valor total"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "decimal"
+      },
+      // Person
+      {
+        "key": "person.name",
+        "name": { "pt_BR": "Pessoa: nome", "en": "Pessoa: nome" },
+        "description": {"pt_BR": "Pessoa: nome","en": "Pessoa: nome"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.cpf",
+        "name": { "pt_BR": "Pessoa: cpf", "en": "Pessoa: cpf" },
+        "description": {"pt_BR": "Pessoa: cpf","en": "Pessoa: cpf"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.ranking",
+        "name": { "pt_BR": "Pessoa: ranking", "en": "Pessoa: ranking" },
+        "description": {"pt_BR": "Pessoa: ranking","en": "Pessoa: ranking"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "integer"
+      },
+      {
+        "key": "person.description",
+        "name": { "pt_BR": "Pessoa: descrição", "en": "Pessoa: descrição" },
+        "description": {"pt_BR": "Pessoa: descrição","en": "Pessoa: descrição"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.birthday",
+        "name": { "pt_BR": "Pessoa: data de aniversário", "en": "Pessoa: data de aniversário" },
+        "description": {"pt_BR": "Pessoa: data de aniversário","en": "Pessoa: data de aniversário"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "datetime",
+        "date_format": "%Y-%m-%Y"
+      },
+      {
+        "key": "person.ownerUser",
+        "label": { "pt_BR": "Pessoa: responsável", "en": "Pessoa: responsável" },
+        "description": {"pt_BR": "Pessoa: responsável","en": "Pessoa: responsável"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "user"
+        }
+      },
+      {
+        "key": "person.contact.email",
+        "name": { "pt_BR": "Pessoa: e-mail", "en": "Pessoa: e-mail" },
+        "description": {"pt_BR": "Pessoa: e-mail","en": "Pessoa: e-mail"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.work",
+        "name": { "pt_BR": "Pessoa: telefone", "en": "Pessoa: telefone" },
+        "description": {"pt_BR": "Pessoa: telefone","en": "Pessoa: telefone"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.mobile",
+        "name": { "pt_BR": "Pessoa: celular", "en": "Pessoa: celular" },
+        "description": {"pt_BR": "Pessoa: celular","en": "Pessoa: celular"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.fax",
+        "name": { "pt_BR": "Pessoa: fax", "en": "Pessoa: fax" },
+        "description": {"pt_BR": "Pessoa: fax","en": "Pessoa: fax"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.whatsapp",
+        "name": { "pt_BR": "Pessoa: whatsapp", "en": "Pessoa: whatsapp" },
+        "description": {"pt_BR": "Pessoa: whatsapp","en": "Pessoa: whatsapp"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.facebook",
+        "name": { "pt_BR": "Pessoa: facebook", "en": "Pessoa: facebook" },
+        "description": {"pt_BR": "Pessoa: facebook","en": "Pessoa: facebook"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.twitter",
+        "name": { "pt_BR": "Pessoa: twitter", "en": "Pessoa: twitter" },
+        "description": {"pt_BR": "Pessoa: twitter","en": "Pessoa: twitter"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.instagram",
+        "name": { "pt_BR": "Pessoa: instagram", "en": "Pessoa: instagram" },
+        "description": {"pt_BR": "Pessoa: instagram","en": "Pessoa: instagram"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.linked_in",
+        "name": { "pt_BR": "Pessoa: linkedin", "en": "Pessoa: linkedin" },
+        "description": {"pt_BR": "Pessoa: linkedin","en": "Pessoa: linkedin"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.contact.skype",
+        "name": { "pt_BR": "Pessoa: skype", "en": "Pessoa: skype" },
+        "description": {"pt_BR": "Pessoa: skype","en": "Pessoa: skype"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.postal_code",
+        "name": { "pt_BR": "Pessoa: cep", "en": "Pessoa: cep" },
+        "description": {"pt_BR": "Pessoa: cep","en": "Pessoa: cep"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.country",
+        "name": { "pt_BR": "Pessoa: país", "en": "Pessoa: país" },
+        "description": {"pt_BR": "Pessoa: país","en": "Pessoa: país"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.district",
+        "name": { "pt_BR": "Pessoa: bairro", "en": "Pessoa: bairro" },
+        "description": {"pt_BR": "Pessoa: bairro","en": "Pessoa: bairro"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.state",
+        "name": { "pt_BR": "Pessoa: estado", "en": "Pessoa: estado" },
+        "description": {"pt_BR": "Pessoa: estado","en": "Pessoa: estado"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.street_name",
+        "name": { "pt_BR": "Pessoa: rua", "en": "Pessoa: rua" },
+        "description": {"pt_BR": "Pessoa: rua","en": "Pessoa: rua"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.street_number",
+        "name": { "pt_BR": "Pessoa: nº da rua", "en": "Pessoa: nº da rua" },
+        "description": {"pt_BR": "Pessoa: nº da rua","en": "Pessoa: nº da rua"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.additional_info",
+        "name": { "pt_BR": "Pessoa: complemento", "en": "Pessoa: complemento" },
+        "description": {"pt_BR": "Pessoa: complemento","en": "Pessoa: complemento"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.address.city",
+        "name": { "pt_BR": "Pessoa: cidade", "en": "Pessoa: cidade" },
+        "description": {"pt_BR": "Pessoa: cidade","en": "Pessoa: cidade"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "person.leadOrigin",
+        "label": { "pt_BR": "Pessoa: origem", "en": "Pessoa: origem" },
+        "description": {"pt_BR": "Pessoa: origem","en": "Pessoa: origem"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "lead_origin"
+        }
+      },
+      {
+        "key": "person.category",
+        "label": { "pt_BR": "Pessoa: categoria", "en": "Pessoa: categoria" },
+        "description": {"pt_BR": "Pessoa: categoria","en": "Pessoa: categoria"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "category"
+        }
+      },
+      {
+        "key": "person.product_service",
+        "label": { "pt_BR": "Pessoa: produto/serviço", "en": "Pessoa: produto/serviço" },
+        "description": {"pt_BR": "Pessoa: produto/serviço","en": "Pessoa: produto/serviço"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "product_service"
+        }
+      },
+      // Organization
+      {
+        "key": "organization.name",
+        "name": { "pt_BR": "Empresa: nome", "en": "Empresa: nome" },
+        "description": {"pt_BR": "Empresa: nome","en": "Empresa: nome"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.legalName",
+        "name": { "pt_BR": "Empresa: razão social", "en": "Empresa: razão social" },
+        "description": {"pt_BR": "Empresa: razão social","en": "Empresa: razão social"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.cnpj",
+        "name": { "pt_BR": "Empresa: cnpj", "en": "Empresa: cnpj" },
+        "description": {"pt_BR": "Empresa: cnpj","en": "Empresa: cnpj"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.ranking",
+        "name": { "pt_BR": "Empresa: ranking", "en": "Empresa: ranking" },
+        "description": {"pt_BR": "Empresa: ranking","en": "Empresa: ranking"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "integer"
+      },
+      {
+        "key": "organization.description",
+        "name": { "pt_BR": "Empresa: descrição", "en": "Empresa: descrição" },
+        "description": {"pt_BR": "Empresa: descrição","en": "Empresa: descrição"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.ownerUser",
+        "label": { "pt_BR": "Empresa: responsável", "en": "Empresa: responsável" },
+        "description": {"pt_BR": "Empresa: responsável","en": "Empresa: responsável"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "user"
+        }
+      },
+      {
+        "key": "organization.contact.email",
+        "name": { "pt_BR": "Empresa: e-mail", "en": "Empresa: e-mail" },
+        "description": {"pt_BR": "Empresa: e-mail","en": "Empresa: e-mail"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.work",
+        "name": { "pt_BR": "Empresa: telefone", "en": "Empresa: telefone" },
+        "description": {"pt_BR": "Empresa: telefone","en": "Empresa: telefone"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.mobile",
+        "name": { "pt_BR": "Empresa: celular", "en": "Empresa: celular" },
+        "description": {"pt_BR": "Empresa: celular","en": "Empresa: celular"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.fax",
+        "name": { "pt_BR": "Empresa: fax", "en": "Empresa: fax" },
+        "description": {"pt_BR": "Empresa: fax","en": "Empresa: fax"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.whatsapp",
+        "name": { "pt_BR": "Empresa: whatsapp", "en": "Empresa: whatsapp" },
+        "description": {"pt_BR": "Empresa: whatsapp","en": "Empresa: whatsapp"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.facebook",
+        "name": { "pt_BR": "Empresa: facebook", "en": "Empresa: facebook" },
+        "description": {"pt_BR": "Empresa: facebook","en": "Empresa: facebook"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.twitter",
+        "name": { "pt_BR": "Empresa: twitter", "en": "Empresa: twitter" },
+        "description": {"pt_BR": "Empresa: twitter","en": "Empresa: twitter"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.instagram",
+        "name": { "pt_BR": "Empresa: instagram", "en": "Empresa: instagram" },
+        "description": {"pt_BR": "Empresa: instagram","en": "Empresa: instagram"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.linked_in",
+        "name": { "pt_BR": "Empresa: linkedin", "en": "Empresa: linkedin" },
+        "description": {"pt_BR": "Empresa: linkedin","en": "Empresa: linkedin"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.contact.skype",
+        "name": { "pt_BR": "Empresa: skype", "en": "Empresa: skype" },
+        "description": {"pt_BR": "Empresa: skype","en": "Empresa: skype"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.postal_code",
+        "name": { "pt_BR": "Empresa: cep", "en": "Empresa: cep" },
+        "description": {"pt_BR": "Empresa: cep","en": "Empresa: cep"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.country",
+        "name": { "pt_BR": "Empresa: país", "en": "Empresa: país" },
+        "description": {"pt_BR": "Empresa: país","en": "Empresa: país"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.district",
+        "name": { "pt_BR": "Empresa: bairro", "en": "Empresa: bairro" },
+        "description": {"pt_BR": "Empresa: bairro","en": "Empresa: bairro"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.state",
+        "name": { "pt_BR": "Empresa: estado", "en": "Empresa: estado" },
+        "description": {"pt_BR": "Empresa: estado","en": "Empresa: estado"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.street_name",
+        "name": { "pt_BR": "Empresa: rua", "en": "Empresa: rua" },
+        "description": {"pt_BR": "Empresa: rua","en": "Empresa: rua"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.street_number",
+        "name": { "pt_BR": "Empresa: nº da rua", "en": "Empresa: nº da rua" },
+        "description": {"pt_BR": "Empresa: nº da rua","en": "Empresa: nº da rua"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.additional_info",
+        "name": { "pt_BR": "Empresa: complemento", "en": "Empresa: complemento" },
+        "description": {"pt_BR": "Empresa: complemento","en": "Empresa: complemento"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.address.city",
+        "name": { "pt_BR": "Empresa: cidade", "en": "Empresa: cidade" },
+        "description": {"pt_BR": "Empresa: cidade","en": "Empresa: cidade"},
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "string"
+      },
+      {
+        "key": "organization.leadOrigin",
+        "label": { "pt_BR": "Empresa: origem", "en": "Empresa: origem" },
+        "description": {"pt_BR": "Empresa: origem","en": "Empresa: origem"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "lead_origin"
+        }
+      },
+      {
+        "key": "organization.category",
+        "label": { "pt_BR": "Empresa: categoria", "en": "Empresa: categoria" },
+        "description": {"pt_BR": "Empresa: categoria","en": "Empresa: categoria"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "category"
+        }
+      },
+      {
+        "key": "organization.sector",
+        "label": { "pt_BR": "Empresa: setor", "en": "Empresa: setor" },
+        "description": {"pt_BR": "Empresa: setor","en": "Empresa: setor"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "sector"
+        }
+      },
+      {
+        "key": "organization.product_service",
+        "label": { "pt_BR": "Empresa: produto/serviço", "en": "Empresa: produto/serviço" },
+        "description": {"pt_BR": "Empresa: produto/serviço","en": "Empresa: produto/serviço"},
+        "placeholder": {
+          "pt_BR": "-",
+          "en": "-"
+        },
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "product_service"
+        }
       }
     ]
   }

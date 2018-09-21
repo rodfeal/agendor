@@ -20,6 +20,7 @@ const event = {
     title: title,
     organization_person: 'person',
     product_service: 322902,
+    value: 1000,
     organization: {
       name: organizationName,
       product_service: 322903,

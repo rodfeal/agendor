@@ -1,0 +1,18 @@
+{
+  "name": "Listar todas as categorias",
+  "helper_method_key": "category",
+  "requests":[
+    {
+      "method_name":"/categories",
+      "response_field": ["data"],
+      "mapping":{
+        "label":{
+          "fields": ["name"]
+        },
+        "value":{
+          "field": "id"
+        }
+      }
+    }
+  ]
+}

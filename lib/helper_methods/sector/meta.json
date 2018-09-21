@@ -1,0 +1,18 @@
+{
+  "name": "Listar todas os setores",
+  "helper_method_key": "sector",
+  "requests":[
+    {
+      "method_name":"/sectors",
+      "response_field": ["data"],
+      "mapping":{
+        "label":{
+          "fields": ["name"]
+        },
+        "value":{
+          "field": "id"
+        }
+      }
+    }
+  ]
+}
