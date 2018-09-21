@@ -1,0 +1,18 @@
+{
+  "name": "Listar todas as origens",
+  "helper_method_key": "lead_origin",
+  "requests":[
+    {
+      "method_name":"/lead_origins",
+      "response_field": ["data"],
+      "mapping":{
+        "label":{
+          "fields": ["name"]
+        },
+        "value":{
+          "field": "id"
+        }
+      }
+    }
+  ]
+}

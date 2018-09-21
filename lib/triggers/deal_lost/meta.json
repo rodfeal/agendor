@@ -108,8 +108,8 @@
       },
       {
         "key": "person.email",
-        "name": "Pessoa: email",
-        "description": "Pessoa: email",
+        "name": "Pessoa: e-mail",
+        "description": "Pessoa: e-mail",
         "field_type": "string"
       },
       {
@@ -306,8 +306,8 @@
       },
       {
         "key": "organization.email",
-        "name": "Empresa: email",
-        "description": "Empresa: email",
+        "name": "Empresa: e-mail",
+        "description": "Empresa: e-mail",
         "field_type": "string"
       },
       {

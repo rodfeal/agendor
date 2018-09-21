@@ -2,41 +2,60 @@ const plg = require('pluga-plg');
 const expect = require('chai').expect;
 const action = require('../../lib/actions/add_deal');
 
-const title = `Deal Test-${Date.now()}`;
+const timestamp = Date.now();
+const title = `Deal Test-${timestamp}`;
+const organizationName = `Org Test-${timestamp}`;
+const organizationEmail = `org-${timestamp}@email.com`;
+const personName = `Person Test-${timestamp}`;
+const personEmail = `person-${timestamp}@email.com`;
+
 const event = {
   meta:{
     baseURI: process.env.BASE_URI
   },
   auth: {
-    api_key: process.env.TOKEN
+    token: process.env.TOKEN
   },
   input:{
     title: title,
-    type: 'organization',
+    organization_person: 'person',
+    product_service: 322902,
+    value: 1000,
     organization: {
-      name: 'Organization 2',
-      description: 'Organization 1'
+      name: organizationName,
+      product_service: 322903,
+      contact: {
+        email: organizationEmail
+      }
+    },
+    person: {
+      name: personName,
+      product_service: 322902,
+      contact: {
+        email: personEmail
+      }
     }
   }
 };
 
 describe('Action: Add deal', () => {
   it('Should add a deal', function (done) {
+    action.handle(plg, event).then(result => {
+      expect(result).to.include({
+        title: title
+      });
 
-    action.handle(plg, event)
-      .then(res => {
-        expect(res.statusText).to.eq('Created');
-        done();
-      })
-      .catch(done);
+      done();
+    }).catch(done);
   });
 
   it('Should update a deal', function (done) {
-    action.handle(plg, event)
-      .then(res => {
-        expect(res.statusText).to.eq('OK');
-        done();
-      })
-      .catch(done);
+    action.handle(plg, event).then(result => {
+      expect(result).to.include({
+        title: title
+      });
+
+      done();
+    }).catch(done);
   });
 });

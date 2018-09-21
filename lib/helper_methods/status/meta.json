@@ -1,0 +1,18 @@
+{
+  "name": "Listar todos os status",
+  "helper_method_key": "status",
+  "requests":[
+    {
+      "method_name":"/deal_statuses",
+      "response_field": ["data"],
+      "mapping":{
+        "label":{
+          "fields": ["name"]
+        },
+        "value":{
+          "field": "id"
+        }
+      }
+    }
+  ]
+}
