@@ -2,7 +2,13 @@ const plg = require('pluga-plg');
 const expect = require('chai').expect;
 const action = require('../../lib/actions/add_deal');
 
-const title = `Deal Test-${Date.now()}`;
+const timestamp = Date.now();
+const title = `Deal Test-${timestamp}`;
+const organizationName = `Org Test-${timestamp}`;
+const organizationEmail = `org-${timestamp}@email.com`;
+const personName = `Person Test-${timestamp}`;
+const personEmail = `person-${timestamp}@email.com`;
+
 const event = {
   meta:{
     baseURI: process.env.BASE_URI
@@ -12,8 +18,22 @@ const event = {
   },
   input:{
     title: title,
-    path: 'people',
-    person: 21270854
+    organization_person: 'person',
+    product_service: 322902,
+    organization: {
+      name: organizationName,
+      product_service: 322903,
+      contact: {
+        email: organizationEmail
+      }
+    },
+    person: {
+      name: personName,
+      product_service: 322902,
+      contact: {
+        email: personEmail
+      }
+    }
   }
 };
 
