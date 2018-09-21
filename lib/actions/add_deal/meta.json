@@ -163,6 +163,7 @@
           "en": "Pessoa: nome"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -174,6 +175,7 @@
           "en": "Pessoa: cpf"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -185,6 +187,7 @@
           "en": "Pessoa: ranking"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "integer"
       },
@@ -196,6 +199,7 @@
           "en": "Pessoa: descrição"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -207,6 +211,7 @@
           "en": "Pessoa: data de aniversário"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "datetime",
         "date_format": "%Y-%m-%Y"
@@ -223,6 +228,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -238,6 +244,7 @@
           "en": "Pessoa: e-mail"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -248,6 +255,7 @@
           "pt_BR": "Telefone da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
           "en": "Pessoa: telefone"},
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -259,6 +267,7 @@
           "en": "Pessoa: celular"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -270,6 +279,7 @@
           "en": "Pessoa: fax"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -281,6 +291,7 @@
           "en": "Pessoa: whatsapp"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -292,6 +303,7 @@
           "en": "Pessoa: facebook"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -303,6 +315,7 @@
           "en": "Pessoa: twitter"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -314,6 +327,7 @@
           "en": "Pessoa: instagram"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -325,6 +339,7 @@
           "en": "Pessoa: linkedin"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -336,6 +351,7 @@
           "en": "Pessoa: skype"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -347,6 +363,7 @@
           "en": "Pessoa: cep"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -358,6 +375,7 @@
           "en": "Pessoa: país"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -369,6 +387,7 @@
           "en": "Pessoa: bairro"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -380,6 +399,7 @@
           "en": "Pessoa: estado"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -391,6 +411,7 @@
           "en": "Pessoa: rua"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -402,6 +423,7 @@
           "en": "Pessoa: nº da rua"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -413,6 +435,7 @@
           "en": "Pessoa: complemento"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -424,6 +447,7 @@
           "en": "Pessoa: cidade"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -439,6 +463,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -458,6 +483,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -477,6 +503,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -493,6 +520,7 @@
           "en": "Empresa: nome"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -501,6 +529,7 @@
         "name": { "pt_BR": "Empresa: razão social", "en": "Empresa: razão social" },
         "description": {"pt_BR": "Empresa: razão social","en": "Empresa: razão social"},
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -512,6 +541,7 @@
           "en": "Empresa: cnpj"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -523,6 +553,7 @@
           "en": "Empresa: ranking"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "integer"
       },
@@ -534,6 +565,7 @@
           "en": "Empresa: descrição"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -549,6 +581,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -564,6 +597,7 @@
           "en": "Empresa: e-mail"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -575,6 +609,7 @@
           "en": "Empresa: telefone"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -586,6 +621,7 @@
           "en": "Empresa: celular"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -597,6 +633,7 @@
           "en": "Empresa: fax"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -608,6 +645,7 @@
           "en": "Empresa: whatsapp"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -619,6 +657,7 @@
           "en": "Empresa: facebook"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -630,6 +669,7 @@
           "en": "Empresa: twitter"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -641,6 +681,7 @@
           "en": "Empresa: instagram"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -652,6 +693,7 @@
           "en": "Empresa: linkedin"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -663,6 +705,7 @@
           "en": "Empresa: skype"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -674,6 +717,7 @@
           "en": "Empresa: cep"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -685,6 +729,7 @@
           "en": "Empresa: país"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -696,6 +741,7 @@
           "en": "Empresa: bairro"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -707,6 +753,7 @@
           "en": "Empresa: estado"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -718,6 +765,7 @@
           "en": "Empresa: rua"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -729,6 +777,7 @@
           "en": "Empresa: nº da rua"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -740,6 +789,7 @@
           "en": "Empresa: complemento"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -751,6 +801,7 @@
           "en": "Empresa: cidade"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "custom",
         "data_type": "string"
       },
@@ -766,6 +817,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -785,6 +837,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -801,6 +854,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
@@ -820,6 +874,7 @@
           "en": "-"
         },
         "visible": true,
+        "advanced": true,
         "field_type": "dropdown",
         "data_type": "integer",
         "list": {
