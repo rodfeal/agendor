@@ -12,7 +12,7 @@
       {
         "key": "title",
         "name": { "pt_BR": "Título", "en": "Título" },
-        "description": {"pt_BR": "Título","en": "Título"},
+        "description": {"pt_BR": "Título do negócio que será adicionado no seu Agendor","en": "Título"},
         "required": true,
         "visible": true,
         "field_type": "custom",
@@ -20,8 +20,11 @@
       },
       {
         "key" : "organization_person",
-        "label": { "pt_BR": "Empresa/Pessoa", "en": "Empresa/Pessoa" },
-        "description": {"pt_BR": "Empresa/Pessoa","en": "Empresa/Pessoa"},
+        "label": { "pt_BR": "Tipo de contato", "en": "Empresa/Pessoa" },
+        "description": {
+          "pt_BR": "Escolha o tipo de contato que será criado no seu negócio (Pessoa ou Empresa). Se você escolher o tipo “Pessoa”, por exemplo, todas as suas negociações do Agendor serão criadas com o tipo de contato “Pessoa“.",
+          "en": "Empresa/Pessoa"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -40,8 +43,11 @@
       },
       {
         "key": "dealStatus",
-        "label": { "pt_BR": "Status", "en": "Status" },
-        "description": {"pt_BR": "Status","en": "Status"},
+        "label": { "pt_BR": "Status do negócio", "en": "Status" },
+        "description": {
+          "pt_BR": "Selecione o Status que serão criados os seus negócios no Agendor (Em andamento, Ganho, Perdido). Se você escolher “Em andamento”, por exemplo, todas as suas negociações do Agendor serão criadas com status “Em andamento”.",
+          "en": "Status"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -57,7 +63,10 @@
       {
         "key": "description",
         "name": { "pt_BR": "Descrição", "en": "Descrição" },
-        "description": {"pt_BR": "Descrição","en": "Descrição"},
+        "description": {
+          "pt_BR": "Descrição do negócio que será adicionado no seu Agendor",
+          "en": "Descrição"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -65,7 +74,10 @@
       {
         "key": "startTime",
         "name": { "pt_BR": "Data de início", "en": "Data de início" },
-        "description": {"pt_BR": "Data de início","en": "Data de início"},
+        "description": {
+          "pt_BR": "Data de início do negócio que será adicionado no seu Agendor, em dd/mm/aaaa.",
+          "en": "Data de início"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "datetime",
@@ -74,7 +86,10 @@
       {
         "key": "endTime",
         "name": { "pt_BR": "Data de conclusão", "en": "Data de conclusão" },
-        "description": {"pt_BR": "Data de conclusão","en": "Data de conclusão"},
+        "description": {
+          "pt_BR": "Data de conclusão do negócio que será adicionado no seu Agendor, em dd/mm/aaaa.",
+          "en": "Data de conclusão"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "datetime",
@@ -83,7 +98,10 @@
       {
         "key": "ranking",
         "name": { "pt_BR": "Ranking", "en": "Ranking" },
-        "description": {"pt_BR": "Ranking","en": "Ranking"},
+        "description": {
+          "pt_BR": "Ranking do negócio que será adicionado no seu Agendor. Exemplo: 3",
+          "en": "Ranking"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "integer"
@@ -91,7 +109,10 @@
       {
         "key": "ownerUser",
         "label": { "pt_BR": "Responsável", "en": "Responsável" },
-        "description": {"pt_BR": "Responsável","en": "Responsável"},
+        "description": {
+          "pt_BR": "Vendedor responsável pelo negócio que será adicionado no seu Agendor.",
+          "en": "Responsável"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -107,7 +128,10 @@
       {
         "key": "dealStage",
         "label": { "pt_BR": "Etapa", "en": "Etapa" },
-        "description": {"pt_BR": "Etapa","en": "Etapa"},
+        "description": {
+          "pt_BR": "Etapa do funil de vendas em que o seu negócio será adicionado no Agendor.",
+          "en": "Etapa"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -123,7 +147,9 @@
       {
         "key": "value",
         "name": { "pt_BR": "Valor total", "en": "Valor total" },
-        "description": {"pt_BR": "Valor total","en": "Valor total"},
+        "description": {
+          "pt_BR": "Valor total (em reais) em que será adicionado no seu negócio.",
+          "en": "Valor total"},
         "visible": true,
         "field_type": "custom",
         "data_type": "decimal"
@@ -132,7 +158,10 @@
       {
         "key": "person.name",
         "name": { "pt_BR": "Pessoa: nome", "en": "Pessoa: nome" },
-        "description": {"pt_BR": "Pessoa: nome","en": "Pessoa: nome"},
+        "description": {
+          "pt_BR": "Nome da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: nome"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -140,7 +169,10 @@
       {
         "key": "person.cpf",
         "name": { "pt_BR": "Pessoa: cpf", "en": "Pessoa: cpf" },
-        "description": {"pt_BR": "Pessoa: cpf","en": "Pessoa: cpf"},
+        "description": {
+          "pt_BR": "CPF da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: cpf"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -148,7 +180,10 @@
       {
         "key": "person.ranking",
         "name": { "pt_BR": "Pessoa: ranking", "en": "Pessoa: ranking" },
-        "description": {"pt_BR": "Pessoa: ranking","en": "Pessoa: ranking"},
+        "description": {
+          "pt_BR": "Ranking (ou pontuação) da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”. Exemplo: 3",
+          "en": "Pessoa: ranking"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "integer"
@@ -156,7 +191,10 @@
       {
         "key": "person.description",
         "name": { "pt_BR": "Pessoa: descrição", "en": "Pessoa: descrição" },
-        "description": {"pt_BR": "Pessoa: descrição","en": "Pessoa: descrição"},
+        "description": {
+          "pt_BR": "Descrição da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: descrição"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -164,7 +202,10 @@
       {
         "key": "person.birthday",
         "name": { "pt_BR": "Pessoa: data de aniversário", "en": "Pessoa: data de aniversário" },
-        "description": {"pt_BR": "Pessoa: data de aniversário","en": "Pessoa: data de aniversário"},
+        "description": {
+          "pt_BR": "Data de aniversário da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: data de aniversário"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "datetime",
@@ -173,7 +214,10 @@
       {
         "key": "person.ownerUser",
         "label": { "pt_BR": "Pessoa: responsável", "en": "Pessoa: responsável" },
-        "description": {"pt_BR": "Pessoa: responsável","en": "Pessoa: responsável"},
+        "description": {
+          "pt_BR": "Aqui você pode selecionar o vendedor que será responsável pelas pessoas que serão cadastradas no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: responsável"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -189,7 +233,10 @@
       {
         "key": "person.contact.email",
         "name": { "pt_BR": "Pessoa: e-mail", "en": "Pessoa: e-mail" },
-        "description": {"pt_BR": "Pessoa: e-mail","en": "Pessoa: e-mail"},
+        "description": {
+          "pt_BR": "E-mail da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: e-mail"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -197,7 +244,9 @@
       {
         "key": "person.contact.work",
         "name": { "pt_BR": "Pessoa: telefone", "en": "Pessoa: telefone" },
-        "description": {"pt_BR": "Pessoa: telefone","en": "Pessoa: telefone"},
+        "description": {
+          "pt_BR": "Telefone da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: telefone"},
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -205,7 +254,10 @@
       {
         "key": "person.contact.mobile",
         "name": { "pt_BR": "Pessoa: celular", "en": "Pessoa: celular" },
-        "description": {"pt_BR": "Pessoa: celular","en": "Pessoa: celular"},
+        "description": {
+          "pt_BR": "Celular da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: celular"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -213,7 +265,10 @@
       {
         "key": "person.contact.fax",
         "name": { "pt_BR": "Pessoa: fax", "en": "Pessoa: fax" },
-        "description": {"pt_BR": "Pessoa: fax","en": "Pessoa: fax"},
+        "description": {
+          "pt_BR": "Fax da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: fax"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -221,7 +276,10 @@
       {
         "key": "person.contact.whatsapp",
         "name": { "pt_BR": "Pessoa: whatsapp", "en": "Pessoa: whatsapp" },
-        "description": {"pt_BR": "Pessoa: whatsapp","en": "Pessoa: whatsapp"},
+        "description": {
+          "pt_BR": "WhatsApp da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: whatsapp"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -229,7 +287,10 @@
       {
         "key": "person.contact.facebook",
         "name": { "pt_BR": "Pessoa: facebook", "en": "Pessoa: facebook" },
-        "description": {"pt_BR": "Pessoa: facebook","en": "Pessoa: facebook"},
+        "description": {
+          "pt_BR": "Facebook da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: facebook"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -237,7 +298,10 @@
       {
         "key": "person.contact.twitter",
         "name": { "pt_BR": "Pessoa: twitter", "en": "Pessoa: twitter" },
-        "description": {"pt_BR": "Pessoa: twitter","en": "Pessoa: twitter"},
+        "description": {
+          "pt_BR": "Twitter da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: twitter"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -245,7 +309,10 @@
       {
         "key": "person.contact.instagram",
         "name": { "pt_BR": "Pessoa: instagram", "en": "Pessoa: instagram" },
-        "description": {"pt_BR": "Pessoa: instagram","en": "Pessoa: instagram"},
+        "description": {
+          "pt_BR": "Instagram da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: instagram"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -253,7 +320,10 @@
       {
         "key": "person.contact.linked_in",
         "name": { "pt_BR": "Pessoa: linkedin", "en": "Pessoa: linkedin" },
-        "description": {"pt_BR": "Pessoa: linkedin","en": "Pessoa: linkedin"},
+        "description": {
+          "pt_BR": "LinkedIn da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: linkedin"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -261,7 +331,10 @@
       {
         "key": "person.contact.skype",
         "name": { "pt_BR": "Pessoa: skype", "en": "Pessoa: skype" },
-        "description": {"pt_BR": "Pessoa: skype","en": "Pessoa: skype"},
+        "description": {
+          "pt_BR": "Skype da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: skype"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -269,7 +342,10 @@
       {
         "key": "person.address.postal_code",
         "name": { "pt_BR": "Pessoa: cep", "en": "Pessoa: cep" },
-        "description": {"pt_BR": "Pessoa: cep","en": "Pessoa: cep"},
+        "description": {
+          "pt_BR": "CEP da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: cep"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -277,7 +353,10 @@
       {
         "key": "person.address.country",
         "name": { "pt_BR": "Pessoa: país", "en": "Pessoa: país" },
-        "description": {"pt_BR": "Pessoa: país","en": "Pessoa: país"},
+        "description": {
+          "pt_BR": "País da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: país"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -285,7 +364,10 @@
       {
         "key": "person.address.district",
         "name": { "pt_BR": "Pessoa: bairro", "en": "Pessoa: bairro" },
-        "description": {"pt_BR": "Pessoa: bairro","en": "Pessoa: bairro"},
+        "description": {
+          "pt_BR": "Bairro da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: bairro"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -293,7 +375,10 @@
       {
         "key": "person.address.state",
         "name": { "pt_BR": "Pessoa: estado", "en": "Pessoa: estado" },
-        "description": {"pt_BR": "Pessoa: estado","en": "Pessoa: estado"},
+        "description": {
+          "pt_BR": "Estado onde a pessoa que será cadastrada no seu Agendor mora, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: estado"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -301,7 +386,10 @@
       {
         "key": "person.address.street_name",
         "name": { "pt_BR": "Pessoa: rua", "en": "Pessoa: rua" },
-        "description": {"pt_BR": "Pessoa: rua","en": "Pessoa: rua"},
+        "description": {
+          "pt_BR": "Rua da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: rua"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -309,7 +397,10 @@
       {
         "key": "person.address.street_number",
         "name": { "pt_BR": "Pessoa: nº da rua", "en": "Pessoa: nº da rua" },
-        "description": {"pt_BR": "Pessoa: nº da rua","en": "Pessoa: nº da rua"},
+        "description": {
+          "pt_BR": "Número da rua onde a pessoa que será cadastrada no seu Agendor mora, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: nº da rua"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -317,7 +408,10 @@
       {
         "key": "person.address.additional_info",
         "name": { "pt_BR": "Pessoa: complemento", "en": "Pessoa: complemento" },
-        "description": {"pt_BR": "Pessoa: complemento","en": "Pessoa: complemento"},
+        "description": {
+          "pt_BR": "Complemento do endereço da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: complemento"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -325,7 +419,10 @@
       {
         "key": "person.address.city",
         "name": { "pt_BR": "Pessoa: cidade", "en": "Pessoa: cidade" },
-        "description": {"pt_BR": "Pessoa: cidade","en": "Pessoa: cidade"},
+        "description": {
+          "pt_BR": "Cidade onde a pessoa que será cadastrada no seu Agendor mora, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: cidade"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -333,7 +430,10 @@
       {
         "key": "person.leadOrigin",
         "label": { "pt_BR": "Pessoa: origem", "en": "Pessoa: origem" },
-        "description": {"pt_BR": "Pessoa: origem","en": "Pessoa: origem"},
+        "description": {
+          "pt_BR": "Aqui você pode definir a origem da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”. Se você selecionar a opção “Evento”, por exemplo, a origem de todas as pessoas adicionadas no seu Agendor será “Evento”.",
+          "en": "Pessoa: origem"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -349,7 +449,10 @@
       {
         "key": "person.category",
         "label": { "pt_BR": "Pessoa: categoria", "en": "Pessoa: categoria" },
-        "description": {"pt_BR": "Pessoa: categoria","en": "Pessoa: categoria"},
+        "description": {
+          "pt_BR": "Categoria da pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”. Se você selecionar a opção “Cliente em potencial”, por exemplo, a categoria de todas as pessoas adicionadas no seu Agendor será de “Cliente em potencial”.",
+          "en": "Pessoa: categoria"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -365,7 +468,10 @@
       {
         "key": "person.product_service",
         "label": { "pt_BR": "Pessoa: produto/serviço", "en": "Pessoa: produto/serviço" },
-        "description": {"pt_BR": "Pessoa: produto/serviço","en": "Pessoa: produto/serviço"},
+        "description": {
+          "pt_BR": "Produto ou serviço relacionado à pessoa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Pessoa”.",
+          "en": "Pessoa: produto/serviço"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -382,7 +488,10 @@
       {
         "key": "organization.name",
         "name": { "pt_BR": "Empresa: nome", "en": "Empresa: nome" },
-        "description": {"pt_BR": "Empresa: nome","en": "Empresa: nome"},
+        "description": {
+          "pt_BR": "Nome da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: nome"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -398,7 +507,10 @@
       {
         "key": "organization.cnpj",
         "name": { "pt_BR": "Empresa: cnpj", "en": "Empresa: cnpj" },
-        "description": {"pt_BR": "Empresa: cnpj","en": "Empresa: cnpj"},
+        "description": {
+          "pt_BR": "CNPJ da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: cnpj"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -406,7 +518,10 @@
       {
         "key": "organization.ranking",
         "name": { "pt_BR": "Empresa: ranking", "en": "Empresa: ranking" },
-        "description": {"pt_BR": "Empresa: ranking","en": "Empresa: ranking"},
+        "description": {
+          "pt_BR": "Ranking (ou pontuação) da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”. Exemplo: 3",
+          "en": "Empresa: ranking"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "integer"
@@ -414,7 +529,10 @@
       {
         "key": "organization.description",
         "name": { "pt_BR": "Empresa: descrição", "en": "Empresa: descrição" },
-        "description": {"pt_BR": "Empresa: descrição","en": "Empresa: descrição"},
+        "description": {
+          "pt_BR": "Descrição da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: descrição"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -422,7 +540,10 @@
       {
         "key": "organization.ownerUser",
         "label": { "pt_BR": "Empresa: responsável", "en": "Empresa: responsável" },
-        "description": {"pt_BR": "Empresa: responsável","en": "Empresa: responsável"},
+        "description": {
+          "pt_BR": "Aqui você pode selecionar o vendedor que será responsável pelas empresas que serão cadastradas no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: responsável"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -438,7 +559,10 @@
       {
         "key": "organization.contact.email",
         "name": { "pt_BR": "Empresa: e-mail", "en": "Empresa: e-mail" },
-        "description": {"pt_BR": "Empresa: e-mail","en": "Empresa: e-mail"},
+        "description": {
+          "pt_BR": "E-mail da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: e-mail"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -446,7 +570,10 @@
       {
         "key": "organization.contact.work",
         "name": { "pt_BR": "Empresa: telefone", "en": "Empresa: telefone" },
-        "description": {"pt_BR": "Empresa: telefone","en": "Empresa: telefone"},
+        "description": {
+          "pt_BR": "Telefone da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: telefone"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -454,7 +581,10 @@
       {
         "key": "organization.contact.mobile",
         "name": { "pt_BR": "Empresa: celular", "en": "Empresa: celular" },
-        "description": {"pt_BR": "Empresa: celular","en": "Empresa: celular"},
+        "description": {
+          "pt_BR": "Celular da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: celular"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -462,7 +592,10 @@
       {
         "key": "organization.contact.fax",
         "name": { "pt_BR": "Empresa: fax", "en": "Empresa: fax" },
-        "description": {"pt_BR": "Empresa: fax","en": "Empresa: fax"},
+        "description": {
+          "pt_BR": "Fax da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: fax"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -470,7 +603,10 @@
       {
         "key": "organization.contact.whatsapp",
         "name": { "pt_BR": "Empresa: whatsapp", "en": "Empresa: whatsapp" },
-        "description": {"pt_BR": "Empresa: whatsapp","en": "Empresa: whatsapp"},
+        "description": {
+          "pt_BR": "WhatsApp da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: whatsapp"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -478,7 +614,10 @@
       {
         "key": "organization.contact.facebook",
         "name": { "pt_BR": "Empresa: facebook", "en": "Empresa: facebook" },
-        "description": {"pt_BR": "Empresa: facebook","en": "Empresa: facebook"},
+        "description": {
+          "pt_BR": "Facebook da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: facebook"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -486,7 +625,10 @@
       {
         "key": "organization.contact.twitter",
         "name": { "pt_BR": "Empresa: twitter", "en": "Empresa: twitter" },
-        "description": {"pt_BR": "Empresa: twitter","en": "Empresa: twitter"},
+        "description": {
+          "pt_BR": "Twitter da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: twitter"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -494,7 +636,10 @@
       {
         "key": "organization.contact.instagram",
         "name": { "pt_BR": "Empresa: instagram", "en": "Empresa: instagram" },
-        "description": {"pt_BR": "Empresa: instagram","en": "Empresa: instagram"},
+        "description": {
+          "pt_BR": "Instagram da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: instagram"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -502,7 +647,10 @@
       {
         "key": "organization.contact.linked_in",
         "name": { "pt_BR": "Empresa: linkedin", "en": "Empresa: linkedin" },
-        "description": {"pt_BR": "Empresa: linkedin","en": "Empresa: linkedin"},
+        "description": {
+          "pt_BR": "LinkedIn da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: linkedin"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -510,7 +658,10 @@
       {
         "key": "organization.contact.skype",
         "name": { "pt_BR": "Empresa: skype", "en": "Empresa: skype" },
-        "description": {"pt_BR": "Empresa: skype","en": "Empresa: skype"},
+        "description": {
+          "pt_BR": "Skype da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: skype"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -518,7 +669,10 @@
       {
         "key": "organization.address.postal_code",
         "name": { "pt_BR": "Empresa: cep", "en": "Empresa: cep" },
-        "description": {"pt_BR": "Empresa: cep","en": "Empresa: cep"},
+        "description": {
+          "pt_BR": "CEP da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: cep"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -526,7 +680,10 @@
       {
         "key": "organization.address.country",
         "name": { "pt_BR": "Empresa: país", "en": "Empresa: país" },
-        "description": {"pt_BR": "Empresa: país","en": "Empresa: país"},
+        "description": {
+          "pt_BR": "País da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: país"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -534,7 +691,10 @@
       {
         "key": "organization.address.district",
         "name": { "pt_BR": "Empresa: bairro", "en": "Empresa: bairro" },
-        "description": {"pt_BR": "Empresa: bairro","en": "Empresa: bairro"},
+        "description": {
+          "pt_BR": "Bairro da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: bairro"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -542,7 +702,10 @@
       {
         "key": "organization.address.state",
         "name": { "pt_BR": "Empresa: estado", "en": "Empresa: estado" },
-        "description": {"pt_BR": "Empresa: estado","en": "Empresa: estado"},
+        "description": {
+          "pt_BR": "Estado onde a empresa que será cadastrada no seu Agendor se localiza, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: estado"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -550,7 +713,10 @@
       {
         "key": "organization.address.street_name",
         "name": { "pt_BR": "Empresa: rua", "en": "Empresa: rua" },
-        "description": {"pt_BR": "Empresa: rua","en": "Empresa: rua"},
+        "description": {
+          "pt_BR": "Rua da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: rua"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -558,7 +724,10 @@
       {
         "key": "organization.address.street_number",
         "name": { "pt_BR": "Empresa: nº da rua", "en": "Empresa: nº da rua" },
-        "description": {"pt_BR": "Empresa: nº da rua","en": "Empresa: nº da rua"},
+        "description": {
+          "pt_BR": "Número da rua onde a empresa que será cadastrada no seu Agendor se localiza, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: nº da rua"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -566,7 +735,10 @@
       {
         "key": "organization.address.additional_info",
         "name": { "pt_BR": "Empresa: complemento", "en": "Empresa: complemento" },
-        "description": {"pt_BR": "Empresa: complemento","en": "Empresa: complemento"},
+        "description": {
+          "pt_BR": "Complemento do endereço da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: complemento"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -574,7 +746,10 @@
       {
         "key": "organization.address.city",
         "name": { "pt_BR": "Empresa: cidade", "en": "Empresa: cidade" },
-        "description": {"pt_BR": "Empresa: cidade","en": "Empresa: cidade"},
+        "description": {
+          "pt_BR": "Cidade onde a empresa que será cadastrada no seu Agendor se localiza, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: cidade"
+        },
         "visible": true,
         "field_type": "custom",
         "data_type": "string"
@@ -582,7 +757,10 @@
       {
         "key": "organization.leadOrigin",
         "label": { "pt_BR": "Empresa: origem", "en": "Empresa: origem" },
-        "description": {"pt_BR": "Empresa: origem","en": "Empresa: origem"},
+        "description": {
+          "pt_BR": "Aqui você pode definir a origem da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”. Se você selecionar a opção “Evento”, por exemplo, a origem de todas as pessoas adicionadas no seu Agendor será “Evento”.",
+          "en": "Empresa: origem"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -598,7 +776,10 @@
       {
         "key": "organization.category",
         "label": { "pt_BR": "Empresa: categoria", "en": "Empresa: categoria" },
-        "description": {"pt_BR": "Empresa: categoria","en": "Empresa: categoria"},
+        "description": {
+          "pt_BR": "Categoria da empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”. Se você selecionar a opção “Cliente em potencial”, por exemplo, a categoria de todas as pessoas adicionadas no seu Agendor será de “Cliente em potencial”.",
+          "en": "Empresa: categoria"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
@@ -630,7 +811,10 @@
       {
         "key": "organization.product_service",
         "label": { "pt_BR": "Empresa: produto/serviço", "en": "Empresa: produto/serviço" },
-        "description": {"pt_BR": "Empresa: produto/serviço","en": "Empresa: produto/serviço"},
+        "description": {
+          "pt_BR": "Produto ou serviço relacionado à empresa que será cadastrada no seu Agendor, caso em “Tipo de contato” você tenha selecionado “Empresa”.",
+          "en": "Empresa: produto/serviço"
+        },
         "placeholder": {
           "pt_BR": "-",
           "en": "-"
