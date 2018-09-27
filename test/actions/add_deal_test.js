@@ -26,7 +26,8 @@ const event = {
       product_service: 322903,
       contact: {
         email: organizationEmail
-      }
+      },
+      address: {}
     },
     person: {
       contact: {},
