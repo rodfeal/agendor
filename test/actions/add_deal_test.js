@@ -18,7 +18,7 @@ const event = {
   },
   input:{
     title: title,
-    organization_person: 'person',
+    organization_person: 'organization',
     product_service: 322902,
     value: 1000,
     organization: {
@@ -26,14 +26,12 @@ const event = {
       product_service: 322903,
       contact: {
         email: organizationEmail
-      }
+      },
+      address: {}
     },
     person: {
-      name: personName,
-      product_service: 322902,
-      contact: {
-        email: personEmail
-      }
+      contact: {},
+      address: {}
     }
   }
 };
