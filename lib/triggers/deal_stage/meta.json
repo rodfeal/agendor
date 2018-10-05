@@ -502,10 +502,5 @@
   ],
   "idempotent": [
     {"type": "body", "field": "id"}
-  ],
-  "base_created_at_filter": {
-    "field": "createdAt",
-    "format": "%Y-%m-%dT%H:%M:%S.000Z",
-    "zone": "UTC"
-  }
+  ]
 }
