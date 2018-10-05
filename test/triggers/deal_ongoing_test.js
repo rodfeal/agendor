@@ -6,7 +6,8 @@ describe('Trigger: deal ongoing', () => {
   it('success', (done) => {
     const event = {
       meta: {
-        baseURI: process.env.BASE_URI
+        baseURI: process.env.BASE_URI,
+        lastReqAt: parseInt(process.env.LAST_REQ_AT)
       },
       auth: {
         token: process.env.TOKEN

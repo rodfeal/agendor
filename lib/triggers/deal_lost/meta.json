@@ -89,7 +89,7 @@
         "field_type": "string"
       },
       {
-        "key": "product_service_names",
+        "key": "product_names",
         "name": "Produtos e serviços relacionados",
         "description": "Produtos e serviços relacionados",
         "field_type": "string"
@@ -233,7 +233,7 @@
         "field_type": "string"
       },
       {
-        "key": "person.product_service_names",
+        "key": "person.product_names",
         "name": "Pessoa: produtos e serviços relacionados",
         "description": "Pessoa: produtos e serviços relacionados",
         "field_type": "string"
@@ -425,7 +425,7 @@
         "field_type": "string"
       },
       {
-        "key": "organization.product_service_names",
+        "key": "organization.product_names",
         "name": "Empresa: produtos e serviços relacionados",
         "description": "Empresa: produtos e serviços relacionados",
         "field_type": "string"
