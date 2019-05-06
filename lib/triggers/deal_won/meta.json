@@ -62,13 +62,17 @@
         "key": "startTime",
         "name": "Data de início",
         "description": "Data de início",
-        "field_type": "datetime"
+        "field_type": "datetime",
+        "force_source": true,
+        "source": "source[:startTime].split(%q(T)).first"
       },
       {
         "key": "endTime",
         "name": "Data de conclusão/ganho",
         "description": "Data de conclusão/ganho",
-        "field_type": "datetime"
+        "field_type": "datetime",
+        "force_source": true,
+        "source": "source[:endTime].split(%q(T)).first"
       },
       {
         "key": "description",
