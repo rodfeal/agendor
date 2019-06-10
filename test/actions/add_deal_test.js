@@ -25,7 +25,8 @@ const event = {
       name: organizationName,
       product_service: 322903,
       contact: {
-        email: organizationEmail
+        email: organizationEmail,
+        mobile: null
       },
       address: {}
     },
