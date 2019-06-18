@@ -26,7 +26,7 @@ const event = {
       product_service: 322903,
       contact: {
         email: organizationEmail,
-        mobile: null
+        mobile: '21999998888'
       },
       address: {}
     },
@@ -54,6 +54,16 @@ describe('Action: Add deal', () => {
         title: title
       });
 
+      done();
+    }).catch(done);
+  });
+
+  it('Should returns error when contact.worker greater than 10', function (done) {
+
+    event.input.organization.contact.work = '11123456789';
+
+    action.handle(plg, event).catch(err => {
+      expect(err.message).to.eq('O número de telefone (contact[work]) deve conter no máximo 10 dígitos');
       done();
     }).catch(done);
   });
