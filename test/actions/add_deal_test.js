@@ -60,7 +60,7 @@ describe('Action: Add deal', () => {
 
   it('Should returns error when contact.worker greater than 10', function (done) {
 
-    event.input.organization.contact.work = '11123456789';
+    event.input.organization.contact.work = '(11) 1234-56789';
 
     action.handle(plg, event).catch(err => {
       expect(err.message).to.eq('O número de telefone (contact[work]) deve conter no máximo 10 dígitos');
